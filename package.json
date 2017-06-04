@@ -1,0 +1,11 @@
+{
+  "name": "cogent-codechallenge",
+  "version": "1.0.0",
+  "description": "Code base for Flower Shop Inc. bundling orders to help with shipping.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paul Barnette",
+  "license": "ISC"
+}
