@@ -1,0 +1,28 @@
+Early in the project I asked these questions to the project owner based on the flower shop.pdf recieved. Notes
+below
+
+-----------------
+
+Hi Ruby,
+
+Thank you for sending across the coding test. In looking it over there are several questions that I have and I understand that you may not be able to give me the answers. If you’re not able to answer that’s fine I’ll make some assumptions and document them. 
+
+It seems the flower shop is changing its business model. What is the reason for this change? To me it seems that they’re changing from one distribution model to essentially become a clearinghouse.  How big of an inventory does the shop have that they can process orders in this inefficient way where you’ll have many orders that are unable to be completed because the current process doesn’t take into account their current inventory. As the format as such feels to me as a batch process. There will be many orders that dont get completed because the orders get processed based on a point in time causing the client to get angry with the flower shop for having incomplete orders. 
+
+Additionally, on a side note, we have no idea how the customers are placing the orders or whos orders get completed/fulfilled because the batched template order doesn’t have any associated info about who placed it. I’m sure there’s a better way and I’ll work towards a better customer experience.
+
+Cheers,
+Paul
+
+-----------------
+
+Hi Paul, 
+
+Sounds like you've had the opportunity to read through the problem. That's great! 
+
+A lot of your answer will be based on assumptions so feel free to add that to your README which will help your assessor on that journey.
+
+There's no right or wrong here, so long as you're documenting it clearly. 
+
+Cheers, 
+Ruby
