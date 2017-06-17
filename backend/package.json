@@ -4,13 +4,14 @@
   "description": "Backend for the flowershop including tests",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "./node_modules/cucumber/bin/cucumber.js ./tests/feature/",
     "setupDB": "node setup.js"
   },
   "author": "Paul Barnette",
   "license": "ISC",
   "dependencies": {
     "add-cors-to-couchdb": "0.0.6",
+    "cucumber": "^2.3.1",
     "express": "^4.15.3",
     "nano": "^6.3.0",
     "node-cmd": "^3.0.0",
