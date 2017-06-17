@@ -1,0 +1,46 @@
+{
+  "schema": {
+      "ver": 1.0,
+      "flowerShop": [{
+        "id": "R12",
+        "name": "Roses",
+        "bundles": [{
+          "price": 6.99,
+          "items": 5
+        }, {
+          "price": 12.99,
+          "items": 10
+        }],
+        "count": 53
+      }, {
+        "id": "L09",
+        "name": "Lilies",
+        "bundles": [{
+          "price": 9.95,
+          "items": 3
+        }, {
+          "price": 16.95,
+          "items": 6
+        }, {
+          "price": 24.95,
+          "items": 9
+        }],
+        "count": 65
+      }, {
+        "id": "T58",
+        "name": "Tulips",
+        "bundles": [{
+          "price": 5.95,
+          "items": 3
+        }, {
+          "price": 9.95,
+          "items": 5
+        }, {
+          "price": 16.99,
+          "items": 9
+        }],
+        "count": 17
+      }]
+    }
+}
+
