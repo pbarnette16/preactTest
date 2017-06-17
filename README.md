@@ -6,8 +6,8 @@ The system the Flower Shop is proposing is more inline with doing batch processe
  
 With this system change, comes changes in the infrastructure of the Flower Shop's systems. Switching to a database that allows for real time updates is necessary. In making this change you would want a database that will also allow the information to be easily replicated to any of the nodes in the AWS cloud that the data would live in. Using a DB such as Couch DB, creates a system that can be synced to the tablets or phones devices where the orders are most likely created. If the customers are also using these devices there is no guarantee that the store/warehouse has the proper wireless to show the current flowershop inventory, this however can be updated in the background so that the customer has the most recent numbers. Creating a progressive web app (PWA) is the most effective choice for this project. This allows for offline viewing of inventory and order creation to be completed when a network is available again. Leading to a better user experience. Once the order has been place a push notification to the PWA can alert the customer that their order has shipped allowing for better customer interactions and expectation setting.  
 
-A simple system diagram is included under the docs. [System Diagram and Wires](docs/system_diagram.pdf)
-
+A simple system diagram is included under the docs. [System Diagram and Wires](docs/system_diagram.pdf) This solution doesn't include
+an identity management solution. Though the solution calls for OAuth it is not implimented in this coding challenge. Additionally, a proper solution would include analytics so that you could track what path the user is going through the site with and also find out what they're doing while online/offline so that you can use tha tinformation to better inform new stories for the backlog. 
 
 
 ## Getting Started
@@ -16,11 +16,40 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+To get started you'll need to install couchdb.
 
 ```
-Give examples
+brew install couchdb
 ```
+
+This will initinalize CouchDB
+```
+brew services start couchdb
+````
+
+Run curl to check to see if the install has occured correctly and your service is running in the background
+```
+curl http://127.0.0.1:5984/
+```
+
+If the install has been successful you should see this reponse
+```
+{"couchdb":"Welcome",...,"version":"1.6.1",...}
+```
+
+Finally we need to install a CORS library for couch to allow for request to be made from possible other domains.
+```
+npm install -g add-cors-to-couchdb
+```
+
+Then Run
+```
+add-cors-to-couchdb
+```
+Where you should see 'success' on the command line as a response.
+
+And all of the Prerequesits for the DB are installed. If you run [into issues](https://pouchdb.com/guides/setup-couchdb.html)
+
 
 ### Installing
 

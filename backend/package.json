@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "version": "0.0.1",
+  "description": "Backend for the flowershop including tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup": "node setup.js"
+  },
+  "author": "Paul Barnette",
+  "license": "ISC",
+  "dependencies": {
+    "add-cors-to-couchdb": "0.0.6",
+    "express": "^4.15.3",
+    "nano": "^6.3.0",
+    "node-cmd": "^3.0.0",
+    "web-push": "^3.2.2"
+  },
+  "devDependencies": {
+    "standard": "^10.0.2"
+  }
+}
