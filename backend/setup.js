@@ -1,5 +1,7 @@
 const cmd = require('node-cmd')
 const pushSetup = require('./setup/push.setup')
+const inventorySetup = require('./setup/inventory.setup')
+const userSetup = require('./setup/users.setup')
 
 // Set couch running
 cmd.get('brew services start couchdb',
@@ -38,3 +40,5 @@ cmd.get('add-cors-to-couchdb',
 )
 
 pushSetup.setup()
+inventorySetup.populate()
+userSetup.populate()

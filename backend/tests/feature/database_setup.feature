@@ -5,8 +5,10 @@ Background:
 	And the setup has been run
 
 Scenario: Web Push Setup
-	When you query the push db
-	Then a single row should be returned 
+	Then a single row should be returned from the Push DB table
 
 Scenario: Users have been prepopulated
 	Then you will find the users table
+
+Scenario: Inventory have been prepopulated
+	Then you will find the inventory table	

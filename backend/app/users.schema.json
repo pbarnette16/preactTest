@@ -1,0 +1,20 @@
+{
+  "schema": {
+      "ver": 1.0,
+      "users": [{
+        "id": "R12",
+        "name": {
+          "first": "Ruby",
+          "last": "Node"
+        },
+        "shippingAddress": {
+          "street": "520 Bourke St",
+          "city": "Melbourne",
+          "state": "Victoria",
+          "zip": 3000
+        }
+        
+      }]
+    }
+}
+
