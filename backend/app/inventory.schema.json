@@ -4,6 +4,7 @@
       "flowerShop": [{
         "id": "R12",
         "name": "Roses",
+        "img" : "static/img/rose.jpg",
         "bundles": [{
           "price": 6.99,
           "items": 5
@@ -15,6 +16,7 @@
       }, {
         "id": "L09",
         "name": "Lilies",
+        "img" : "static/img/lillies.jpeg",
         "bundles": [{
           "price": 9.95,
           "items": 3
@@ -29,6 +31,7 @@
       }, {
         "id": "T58",
         "name": "Tulips",
+        "img": "static/img/tulips.jpg",
         "bundles": [{
           "price": 5.95,
           "items": 3
