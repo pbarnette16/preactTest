@@ -22,31 +22,12 @@ To get started you'll need to install couchdb.
 brew install couchdb
 ```
 
-This will initinalize CouchDB
-```
-brew services start couchdb
-````
-
-Run curl to check to see if the install has occured correctly and your service is running in the background
-```
-curl http://127.0.0.1:5984/
-```
-
-If the install has been successful you should see this reponse
-```
-{"couchdb":"Welcome",...,"version":"1.6.1",...}
-```
 
 Finally we need to install a CORS library for couch to allow for request to be made from possible other domains.
 ```
 npm install -g add-cors-to-couchdb
 ```
 
-Then Run
-```
-add-cors-to-couchdb
-```
-Where you should see 'success' on the command line as a response.
 
 And all of the Prerequesits for the DB are installed. If you run [into issues](https://pouchdb.com/guides/setup-couchdb.html)
 
