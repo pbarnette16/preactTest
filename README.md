@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Flower Shop
  
 The Flower Shop is changing how it does business with its customers. Previously the Shop would charge the customers per flower that would get delivered. Currently they are moving towards a system where orders are bundled. The problem that they will have with the way orders are ordered with the new system they want to implement is that there is potential for orders not to be completed based on inventory. 
@@ -103,3 +104,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Hat tip to anyone who's code was used
 * Inspiration
 * etc
+=======
+# preactTest
+>>>>>>> fe2c20adf15e09468816cb7c76af03d66b179757
