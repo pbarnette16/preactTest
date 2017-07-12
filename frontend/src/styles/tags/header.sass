@@ -1,0 +1,78 @@
+/**
+ * Nav / Header
+ */
+
+
+$header-height: 7 * $base-unit
+
+.header
+	position: fixed
+	height: $header-height
+	width: 100%
+	padding: 0
+	left: 0
+	top: 0
+	background: $primary
+	@extend %shadow
+	z-index: 50
+
+	.header-title
+		.mdc-toolbar__title
+			float: left
+			margin: 0
+			padding: 0 $base-spacing
+			font-size: 24px
+			line-height: $header-height
+			font-weight: 400
+			color: $white
+		a
+			color: $offwhite
+			text-decoration: none;
+			float: left
+			height: $header-height
+			line-height: $header-height
+			padding: 0 $base-spacing/2
+			text-align: center
+
+	button
+			background-color: transparent
+			border: 0
+			color: $offwhite
+			margin-right: 15px;
+			.mdc-icon
+				display: inline-block
+				vertical-align: text-bottom
+			span
+				font-size: 18px
+				padding-right: 10px
+				text-transform: none
+				
+
+
+	nav
+		float: right
+		font-size: 100%
+
+		a
+			display: inline-block
+			height: $header-height
+			line-height: $header-height
+			padding: 0 $base-spacing
+			text-align: center
+			min-width: 50px
+			background: rgba($white, 0)
+			will-change: background-color
+			text-decoration: none
+			color: $offwhite
+			&:hover,
+			&:active
+				background: rgba($white, 0.3)
+
+
+	@media screen and (max-width: 401px)
+		nav a
+			padding: 0 $base-spacing/2
+			min-width: $base-spacing*2
+	@media screen and (max-width: 321px)
+		h1
+			font-size: 18px

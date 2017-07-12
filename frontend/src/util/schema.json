@@ -1,0 +1,52 @@
+{
+  "schema": {
+      "ver": 1.0,
+      "flowerShop": [{
+        "id": "R12",
+        "name": "Roses",
+        "img" : "/img/rose.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "bundles": [{
+          "price": 6.99,
+          "bundleSize": 5
+        }, {
+          "price": 12.99,
+          "bundleSize": 10
+        }],
+        "count": 53
+      }, {
+        "id": "L09",
+        "name": "Lilies",
+        "img" : "/img/lillies.jpeg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "bundles": [{
+          "price": 9.95,
+          "bundleSize": 3
+        }, {
+          "price": 16.95,
+          "bundleSize": 6
+        }, {
+          "price": 24.95,
+          "bundleSize": 9
+        }],
+        "count": 65
+      }, {
+        "id": "T58",
+        "name": "Tulips",
+        "img": "/img/tulips.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "bundles": [{
+          "price": 5.95,
+          "bundleSize": 3
+        }, {
+          "price": 9.95,
+          "bundleSize": 5
+        }, {
+          "price": 16.99,
+          "bundleSize": 9
+        }],
+        "count": 17
+      }]
+    }
+}
+
