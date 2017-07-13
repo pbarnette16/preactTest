@@ -3,6 +3,7 @@ import { Link } from 'preact-router'
 import Card from '../tags/card'
 import CheckoutTable from '../tags/checkoutTable'
 import Button from 'preact-material-components/Button'
+import Snackbar from 'preact-material-components/Snackbar'
 
 export default class Cart extends Component {
   constructor (props) {
@@ -17,6 +18,9 @@ export default class Cart extends Component {
 
   checkOut (e) {
     console.log('checkOut')
+    this.bar.MDComponent.show({
+      message: 'Thank you for your order!'
+    })
   }
 
   render (props, state) {
@@ -30,6 +34,7 @@ export default class Cart extends Component {
        Checkout
       </Button>
         </Card>
+        <Snackbar ref={bar => { this.bar = bar }} />
       </div>
     )
   }
