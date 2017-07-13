@@ -7,11 +7,21 @@ import Form from '../tags/form'
 export default class Flower extends Component {
   constructor (props) {
     super()
+    let cart = props.inventory.find(item => {
+      return item.id === props.id
+    })
     this.state = {
-      item: props.inventory.find(item => {
-        return item.id === props.id
-      })
+      item: cart
     }
+
+    this.updateCart = this.updateCart.bind(this)
+  }
+
+  updateCart (cart) {
+    console.log('returned from nested function', cart)
+    this.setState({
+      item: cart
+    })
   }
 
   render (props, state) {
@@ -28,7 +38,8 @@ export default class Flower extends Component {
             <div>
               <p>{state.item.description}</p>
               <TableBundle bundle={state.item.bundles} />
-              <Form maxNumb={state.item.count} bundle={state.item.bundles} itemId={state.item.id} />
+              <Form cart={state.cart} maxNumb={state.item.count} bundle={state.item.bundles} itemId={state.item.id}
+                updateCart={this.updateCart} />
             </div>
           </div>
 

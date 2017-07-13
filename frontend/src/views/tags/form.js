@@ -15,6 +15,9 @@ export default class Form extends Component {
     this.maxNumb = props.maxNumb
     this.model = new Model('cart')
     this.itemId = props.itemId
+    this.cart = props.cart
+
+    console.log('props cart', props.cart)
   }
 
   updateCart (e) {
@@ -47,13 +50,13 @@ export default class Form extends Component {
       }
     })
 
-    console.log('updating the current cart %o', currCart)
-
     window.sessionStorage.setItem('cart',
       JSON.stringify(currCart))
 
     window.sessionStorage.setItem('inventory',
       JSON.stringify(inventory))
+
+    this.props.updateCart(foundItem)
   }
 
   render (props, state) {
