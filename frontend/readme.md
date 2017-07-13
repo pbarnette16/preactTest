@@ -1,30 +1,56 @@
-# preact-starter
+# Flowershop Front End
 
-> Webpack2 boilerplate for building SPA / PWA / offline front-end apps with :atom_symbol: [Preact](https://github.com/developit/preact)
+The front end is built using preact because it is faster than react and has a smaller file size. I attempted to hook this up with the back end but im still learning preact as i only started to learn it 3 weeks ago. So yes this isn't production ready but I can get it there in short order now that I have a better understanding of the state model. The app is a single page app with the cart being kept in the session storage. On browser refesh this will restart the app.
 
-Using `preact-starter` will kickstart your next application! :100: It is designed to fit the "90% use-case" for those who want to build offline-first web apps (see [features](#features) below).
+You will find the test in the test folder. They are written in cucumber as this is the best format for Business, Devs, Project Mrgs, and testers. 
 
-> :triangular_flag_on_post: **Important:** This is meant for _client-side_ apps only; there is **no support** included for universal / server-side rendering. I plan to release my own SSR kit shortly!
+If you havent installed yarn please do. Its so much faster than npm.
 
-**Please note:** Boilerplate _does not_ incorporate the latest ["css-in-js" or "css modules" technique](https://github.com/MicheleBertoli/css-in-js). Instead, the more traditional approach is taken, wherein `styles` and `scripts` are kept separate. That said, you may **certainly and easily** take that route if desired. :white_check_mark:
+```
+npm -g install yarn
+```
+
+And you'll be off and running.
 
 ---
 
-<p align="center">:warning: Boilerplate & commands will evolve as my own development process does. :warning:</p>
+<p align="center">This project is built on the preact starter kit project.</p>
 
 ---
 
 ## Install
 
-```sh
-git clone https://github.com/lukeed/preact-starter
-cd preact-starter
-npm install
-npm run build
-npm start
+```
+yarn install
+```
+Install of the packages for the project.
+
+#### build
+```
+yarn build
+```
+Will build an executiable file for distribution
+
+#### watch
+```
+yarn watch
+```
+Will bring up the webkit dashboard and a local dev server for development.
+
+#### test
+```
+yarn test
+```
+Will run the test suit on the project.
+
+#### start
+
+```
+$ yarn start
 ```
 
-> :exclamation: **Pro Tip:** Use [Yarn](https://yarnpkg.com/) to install dependencies 3x faster than NPM!
+Runs your application (from the `dist` directory) in the browser.
+
 
 ## Features
 
@@ -39,55 +65,6 @@ npm start
 
   ![lightouse](src/static/img/lighthouse.jpg)
 
-## Development
-
-### Commands
-
-Any of the following commands can (and should :wink:) be run from the command line.
-
-> If using [Yarn](https://yarnpkg.com/), all instances of `npm` can be replaced with `yarn`. :ok_hand:
-
-#### build
-
-```
-$ npm run build
-```
-
-Compiles all files. Output is sent to the `dist` directory.
-
-#### start
-
-```
-$ npm start
-```
-
-Runs your application (from the `dist` directory) in the browser.
-
-#### watch
-
-```
-$ npm run watch
-```
-
-Like [`start`](#start), but will auto-compile & auto-reload the server after any file changes within the `src` directory.
-
-### Dashboard
-
-With [`webpack-dashboard`](https://github.com/FormidableLabs/webpack-dashboard), it's much easier to see what's happening inside your bundles. In addition to de-cluttering your `webpack-dev-server` log, you can quickly make sense of your bundles' `import`s and sizes.
-
-![dashboard](src/static/img/dev-dash.jpg)
-
-The dashboard is meant to be interactive (scrollable). If you are having issues, please see the author's note:
-
-> ***OS X Terminal.app users:*** Make sure that **View → Allow Mouse Reporting** is enabled, otherwise scrolling through logs and modules won't work. If your version of Terminal.app doesn't have this feature, you may want to check out an alternative such as [iTerm2](https://www.iterm2.com/index.html).
-
-### Preact Developer Tools
-
-You can inspect and modify the state of your Preact UI components at runtime using the [React Developer Tools](https://github.com/facebook/react-devtools) browser extension.
-
-1. Install the [React Developer Tools](https://github.com/facebook/react-devtools) extension
-2. [Import the `preact/devtools`](src/index.js#L21) module in your app
-3. Reload and go to the 'React' tab in the browser's development tools
 
 ## License
 
