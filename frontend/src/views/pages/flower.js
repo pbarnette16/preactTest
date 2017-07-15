@@ -3,6 +3,8 @@ import { Link } from 'preact-router'
 import Card from '../tags/card'
 import TableBundle from '../tags/tableBundle'
 import Form from '../tags/form'
+import Snackbar from 'preact-material-components/Snackbar'
+import Button from 'preact-material-components/Button'
 
 export default class Flower extends Component {
   constructor (props) {
@@ -15,13 +17,24 @@ export default class Flower extends Component {
     }
 
     this.updateCart = this.updateCart.bind(this)
+    this.showCartSnackbar = this.showCartSnackbar.bind(this)
+  }
+
+  componentDidMount () {
+
+  }
+
+  showCartSnackbar () {
+    this.bar.MDComponent.show({
+      message: 'Updated your cart.'
+    })
   }
 
   updateCart (cart) {
     console.log('returned from nested function', cart)
     this.setState({
       item: cart
-    })
+    }, this.showCartSnackbar) // call update snackbar after the state has been updated
   }
 
   render (props, state) {
@@ -44,6 +57,7 @@ export default class Flower extends Component {
           </div>
 
         </Card>
+        <Snackbar ref={bar => { this.bar = bar }} />
       </div>
     )
   }
